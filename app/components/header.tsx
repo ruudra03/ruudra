@@ -2,16 +2,24 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <div>
-        <h1>@ruudra</h1>
+        <Link href="/">@ruudra</Link>
       </div>
-      <div>
-        <Link href="/index">Index</Link>
-        <Link href="/work">Work</Link>
-        <Link href="/notes">Notes</Link>
-        <Link href="/profile">Profile</Link>
-      </div>
-    </div>
+      <nav>
+        <div>
+          <Link href="/index">Index</Link>
+        </div>
+        <div>
+          <Link href="/work">Work</Link>
+        </div>
+        <div>
+          <Link href="/notes">Notes</Link>
+        </div>
+        <div>
+          <Link href="/profile">Profile</Link>
+        </div>
+      </nav>
+    </header>
   );
 }

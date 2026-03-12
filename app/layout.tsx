@@ -4,6 +4,7 @@ import "./globals.css";
 // Import components
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Container from "./components/container";
 
 export const metadata: Metadata = {
   title: "ruudra",
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+        <Container>{children}</Container>
         <Footer />
       </body>
     </html>
